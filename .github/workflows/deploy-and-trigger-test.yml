@@ -28,7 +28,7 @@ jobs:
             echo "BASE_URL=https://www.saucedemo.com" >> $GITHUB_ENV
           elif [[ "${{ github.ref }}" == "refs/heads/develop" ]]; then
             echo "ENV=dev" >> $GITHUB_ENV
-            echo "TAG=@smoke" >> $GITHUB_ENV
+            echo "TAG=@critical" >> $GITHUB_ENV
             echo "BASE_URL=https://www.saucedemo-dev.com" >> $GITHUB_ENV
           fi
 
