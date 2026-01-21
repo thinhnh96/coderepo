@@ -24,7 +24,7 @@ jobs:
         run: |
           if [[ "${{ github.ref }}" == "refs/heads/main" ]]; then
             echo "ENV=qa" >> $GITHUB_ENV
-            echo "TAG=@regression" >> $GITHUB_ENV
+            echo "TAG=@smoketest" >> $GITHUB_ENV
             echo "BASE_URL=https://www.saucedemo.com" >> $GITHUB_ENV
           elif [[ "${{ github.ref }}" == "refs/heads/develop" ]]; then
             echo "ENV=dev" >> $GITHUB_ENV
