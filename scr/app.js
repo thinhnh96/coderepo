@@ -6,7 +6,7 @@ const PORT = process.env.PORT || 3000;
 // Middleware
 app.use(express.json());
 
-// Health check (QA/CI hay dùng)
+// Health check (QA/CI hay dùng 1)
 app.get('/health', (req, res) => {
   res.status(200).json({
     status: 'OK',
