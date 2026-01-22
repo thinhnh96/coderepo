@@ -15,7 +15,7 @@ app.get('/health', (req, res) => {
   });
 });
 
-// Demo login API (để test)
+// Demo login API
 app.post('/login', (req, res) => {
   const { username, password } = req.body;
 
